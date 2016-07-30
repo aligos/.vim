@@ -12,23 +12,30 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 
-set nocompatible
-
 " wrap end of line
 set wrap
+
+set nocompatible
 
 " show line numbers
 set relativenumber
 set number
 set cursorline
 
+" Allow to move to another buffer without saving
+set hidden
 
 " syntax highlighting
 syntax on
 set background=dark
 set t_Co=256
 colorscheme base16-ocean
-hi CursorLineNr term=bold ctermfg=11 gui=bold guifg=Yellow
+
+" Highglight current line number
+hi CursorLineNR cterm=bold
+augroup CLNRSet
+    autocmd! ColorScheme * hi CursorLineNr term=bold ctermfg=11 gui=bold guifg=Yellow
+augroup END
 
 "indent
 set smartindent
@@ -67,6 +74,6 @@ set nospell
 set timeoutlen=1000 ttimeoutlen=0
 
 
-filetype off                  " required
+filetype off                 " required
 
 filetype plugin indent on    " required

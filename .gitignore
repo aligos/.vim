@@ -2,3 +2,5 @@ local.vim
 plugins/plugged/*
 plugged/*
 colors
+
+bundle

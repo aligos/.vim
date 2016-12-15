@@ -85,3 +85,9 @@ else
 
 endif
 
+" Themes
+set t_Co=256
+syntax enable
+set number
+colorscheme wombat256
+:let g:airline_theme='wombat'

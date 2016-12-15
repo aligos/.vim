@@ -22,7 +22,7 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'othree/html5.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'marijnh/tern_for_vim', { 'do' : 'npm install' }
 Plug 'moll/vim-node'
 Plug 'syngan/vim-vimlint'
@@ -37,10 +37,14 @@ Plug 'chriskempson/base16-vim'
 Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'mhartington/oceanic-next'
+Plug 'fatih/vim-go'
 "Plug 'wookiehangover/jshint.vim'
 "Plug 'Yggdroot/indentLine'
 "Plug 'gorodinskiy/vim-coloresque'
 "Plug 'arnaud-lb/vim-php-namespace'
 "Plug 'sheerun/vim-polyglot'
 
+
 call plug#end()
+

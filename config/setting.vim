@@ -26,10 +26,6 @@ set cursorline
 set hidden
 
 " syntax highlighting
-syntax on
-set background=dark
-set t_Co=256
-colorscheme base16-ocean
 
 " Highglight current line number
 hi CursorLineNR cterm=bold
@@ -40,7 +36,6 @@ augroup END
 "indent
 set smartindent
 set autoindent
-set breakindent
 set copyindent
 set shiftwidth=2
 set shiftround
